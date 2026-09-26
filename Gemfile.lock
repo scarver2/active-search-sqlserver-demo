@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/scarver2/rails-active_search.git
-  revision: d071475e2440e1727c130ead4df6f005ce8ad11e
+  revision: b766d666db6d8dab032335e8e49602d5a952a245
   branch: feat/sql-server-support
   specs:
     rails-active_search (0.1.0)
