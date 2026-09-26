@@ -28,3 +28,8 @@ compose() {
 ruby_exec() {
   "$MISE_BIN" exec -- "$@"
 }
+
+create_databases() {
+  compose exec -T sqlserver /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$MSSQL_SA_PASSWORD" -C \
+    -Q "IF DB_ID('active_search_demo_development') IS NULL CREATE DATABASE active_search_demo_development; IF DB_ID('active_search_demo_test') IS NULL CREATE DATABASE active_search_demo_test"
+}
