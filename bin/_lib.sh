@@ -4,6 +4,7 @@ set -euo pipefail
 
 BIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$BIN_DIR/.." && pwd)"
+MISE_BIN="${MISE_BIN:-$(command -v mise || true)}"
 MISE_BIN="${MISE_BIN:-${HOME}/.local/bin/mise}"
 
 cd "$ROOT_DIR"
