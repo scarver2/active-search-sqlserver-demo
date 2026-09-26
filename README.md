@@ -12,7 +12,8 @@ Active Search against real SQL Server 2022 Full-Text Search.
 4. Open http://localhost:3000 and search the deterministic Article data.
 
 The setup command builds SQL Server with mssql-server-fts, verifies FTS availability, creates the
-databases, migrates, seeds, and indexes the articles.
+databases, migrates, seeds, and indexes the articles. The project commands generate a local,
+git-ignored `.env` containing a random development-only SQL Server password on first use.
 
 Useful commands include bin/up, bin/down, bin/status, bin/doctor, and bin/test.
 

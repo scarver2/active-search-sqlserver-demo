@@ -4,7 +4,7 @@ default: &default
   host: <%= ENV.fetch("SQLSERVER_HOST", "127.0.0.1") %>
   port: <%= ENV.fetch("SQLSERVER_PORT", 1434) %>
   username: <%= ENV.fetch("SQLSERVER_USER", "sa") %>
-  password: <%= ENV.fetch("SQLSERVER_PASSWORD", "ActiveSearch-SQL2026!") %>
+  password: <%= ENV.fetch("SQLSERVER_PASSWORD") %>
   login_timeout: 120
   max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 120
