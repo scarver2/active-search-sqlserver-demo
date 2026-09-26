@@ -1,0 +1,22 @@
+<h1>Active Search with SQL Server</h1>
+
+<%= form_with url: articles_path, method: :get do |form| %>
+  <%= form.search_field :query, value: @query, placeholder: "Search articles" %>
+  <%= form.text_field :category, value: params[:category], placeholder: "Category" %>
+  <%= form.submit "Search" %>
+<% end %>
+
+<p><%= @articles.size %> result(s)</p>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <strong><%= article.title %></strong>
+      by <%= article.author %> in <%= article.category %>
+      <% if article.respond_to?(:hit) && article.hit %>
+        (rank <%= article.hit.score %>)
+      <% end %>
+      <p><%= article.content %></p>
+    </li>
+  <% end %>
+</ul>

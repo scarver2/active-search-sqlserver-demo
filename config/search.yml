@@ -1,0 +1,8 @@
+development:
+  adapter: sqlserver
+
+test:
+  adapter: sqlserver
+
+production:
+  adapter: sqlserver
