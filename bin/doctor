@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+source "$(dirname "$0")/_lib.sh"
+command -v docker >/dev/null
+test -x "$MISE_BIN"
+compose config --quiet
+compose exec -T sqlserver /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$MSSQL_SA_PASSWORD" -C \
+  -Q "SET NOCOUNT ON; IF FULLTEXTSERVICEPROPERTY('IsFullTextInstalled') <> 1 THROW 50000, 'FTS unavailable', 1; SELECT @@VERSION"
