@@ -1,0 +1,25 @@
+# config/database.yml
+default: &default
+  adapter: sqlserver
+  host: <%= ENV.fetch("SQLSERVER_HOST", "127.0.0.1") %>
+  port: <%= ENV.fetch("SQLSERVER_PORT", 1434) %>
+  username: <%= ENV.fetch("SQLSERVER_USER", "sa") %>
+  password: <%= ENV.fetch("SQLSERVER_PASSWORD") %>
+  login_timeout: 120
+  max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 120
+
+development:
+  <<: *default
+  database: active_search_demo_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: active_search_demo_test
+
+production:
+  <<: *default
+  database: <%= ENV.fetch("SQLSERVER_DATABASE", "active_search_demo_production") %>

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source "$(dirname "$0")/_lib.sh"
+"$BIN_DIR/up"
+create_databases
+ruby_exec env RAILS_ENV=test bundle exec rails db:migrate
+ruby_exec bundle exec rspec "$@"

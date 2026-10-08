@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+source "$(dirname "$0")/_lib.sh"
+
+ruby_exec bundle install
+"$BIN_DIR/up"
+
+create_databases
+
+ruby_exec bundle exec rails db:prepare db:seed
