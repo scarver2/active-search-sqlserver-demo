@@ -15,6 +15,10 @@ The setup command builds SQL Server with mssql-server-fts, verifies FTS availabi
 databases, migrates, seeds, and indexes the articles. The project commands generate a local,
 git-ignored `.env` containing a random development-only SQL Server password on first use.
 
+The migrations are the authoritative database definition. Neither Rails' Ruby schema nor the SQL
+Server adapter's SQL structure dump preserves full-text catalogs and indexes, so the setup and test
+commands run the migrations when preparing their databases.
+
 Useful commands include bin/up, bin/down, bin/status, bin/doctor, and bin/test.
 
 ## Behavior
