@@ -64,7 +64,7 @@ GEM
       activemodel (= 8.1.4)
       activesupport (= 8.1.4)
       timeout (>= 0.4.0)
-    activerecord-sqlserver-adapter (8.1.3)
+    activerecord-sqlserver-adapter (8.1.4)
       activerecord (~> 8.1.0)
       tiny_tds (~> 3.0)
     activestorage (8.1.4)
@@ -130,7 +130,7 @@ GEM
     jbuilder (2.15.1)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
-    json (3.0.2)
+    json (3.1.0)
     kamal (2.12.0)
       activesupport (>= 7.0)
       base64 (~> 0.2)
@@ -334,15 +334,15 @@ GEM
     thruster (0.1.27-x86_64-darwin)
     thruster (0.1.27-x86_64-linux)
     timeout (0.6.1)
-    tiny_tds (3.4.0)
+    tiny_tds (3.4.1)
       bigdecimal (>= 2.0.0)
-    tiny_tds (3.4.0-aarch64-linux-gnu)
+    tiny_tds (3.4.1-aarch64-linux-gnu)
       bigdecimal (>= 2.0.0)
-    tiny_tds (3.4.0-aarch64-linux-musl)
+    tiny_tds (3.4.1-aarch64-linux-musl)
       bigdecimal (>= 2.0.0)
-    tiny_tds (3.4.0-x86_64-linux-gnu)
+    tiny_tds (3.4.1-x86_64-linux-gnu)
       bigdecimal (>= 2.0.0)
-    tiny_tds (3.4.0-x86_64-linux-musl)
+    tiny_tds (3.4.1-x86_64-linux-musl)
       bigdecimal (>= 2.0.0)
     tsort (0.2.0)
     tzinfo (2.0.6)
@@ -350,7 +350,7 @@ GEM
     unicode-display_width (3.3.0)
       unicode-emoji (~> 4.3)
     unicode-emoji (4.3.0)
-    uri (1.1.1)
+    uri (1.1.2)
     useragent (0.16.11)
     web-console (4.3.0)
       actionview (>= 8.0.0)
@@ -405,7 +405,7 @@ CHECKSUMS
   activejob (8.1.4) sha256=4ed5b2ed8d4cc5c8f5f09becfef8346f202a4884eee0c8c73cae5ac378824099
   activemodel (8.1.4) sha256=9a0906c127bd118aa5f06157db12b8f750da83dccee72db2f658547a0ae7a0e8
   activerecord (8.1.4) sha256=3b4957ea7f246c9231bd7faa909312eac03a9101aaf87977b6c52733ff00b04f
-  activerecord-sqlserver-adapter (8.1.3) sha256=f7410368b312d6f551b0c463ff2a53b3e52d0bd9315005011d85c88aa325e968
+  activerecord-sqlserver-adapter (8.1.4) sha256=15744e8167db45c02b3e7dbe6467cf2a05792ecddb026015d26fd37617f23c89
   activestorage (8.1.4) sha256=f4956f3ec9ee63e5e0b332b57c877cb627f82b56f4cc902279310d2aa285c7a8
   activesupport (8.1.4) sha256=891dd3fe43c4fc8391934b237b1189bb1f661c932a84a840043db9d46a4e80df
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
@@ -436,7 +436,7 @@ CHECKSUMS
   io-console (0.9.4) sha256=a403304f32928ee85e56d457b4612ca43f2703b561a3258844992bd24085fbb1
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   jbuilder (2.15.1) sha256=2430bec28fb0cebacb5875b1009cf9d8bc3c303ccb810c4c8b062a4b51457637
-  json (3.0.2) sha256=8e6d7e7b11384c21230430cef90b71f14849a34a1f4452796670f7c981bd19df
+  json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
   kamal (2.12.0) sha256=c51d1ab085e515470f98d0c0f043637122b5ebf76e8b610cb1fbbed0b7f9b8fa
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
@@ -509,16 +509,16 @@ CHECKSUMS
   thruster (0.1.27-x86_64-darwin) sha256=f389bdfccf332dabff8053194e64cd65d4ae247f1afd386624233a1dfaa41485
   thruster (0.1.27-x86_64-linux) sha256=7e0e6381011401810b047ff25506e0e38755b2430499ff5586f1a110086981c6
   timeout (0.6.1) sha256=78f57368a7e7bbadec56971f78a3f5ecbcfb59b7fcbb0a3ed6ddc08a5094accb
-  tiny_tds (3.4.0) sha256=b43e1475cc4b2fa6674847a6a5b72aed99d3332840e1a9f195ca8b1f68653688
-  tiny_tds (3.4.0-aarch64-linux-gnu) sha256=2bfad37bfd894b520e7998dbdc6811fbe7a9f40b4803d30b1307aca3e777fc39
-  tiny_tds (3.4.0-aarch64-linux-musl) sha256=a5ef22dde32998dcba1b75e17bb6419ea80dd52b8bc17d152a8aa6c96f26663d
-  tiny_tds (3.4.0-x86_64-linux-gnu) sha256=56a25e44e8c71432c1e69577cb56893048a949efa7fd839a48efaec88e603b2e
-  tiny_tds (3.4.0-x86_64-linux-musl) sha256=7516c187158215a0a47e3bb1f0dc8794359f6896a284a5ad1140d395461f2b99
+  tiny_tds (3.4.1) sha256=9af4e7aa3a93cd9e8a2d74ce4ba147ed60a91d35617d70cdc508f3e60aa48d94
+  tiny_tds (3.4.1-aarch64-linux-gnu) sha256=950274ad185fbba5c279a2aae25295ea293b966a5eb05920f2a34d4191c0a8c5
+  tiny_tds (3.4.1-aarch64-linux-musl) sha256=989eba94def6376427bc26307550b49651dab489ef55daae812532a088e89122
+  tiny_tds (3.4.1-x86_64-linux-gnu) sha256=732de2afa835dec6b0b248d1ce45fa82aa636c62df842507de5f1b2a112d9bc6
+  tiny_tds (3.4.1-x86_64-linux-musl) sha256=98c7f9f2e69d205b92d9bc82dfd5f4d9ac4e4758eb79b9c79415076b960a30c5
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   tzinfo (2.0.6) sha256=8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b
   unicode-display_width (3.3.0) sha256=4b7aa66a4b11db50f6f7e98411215cd0dd10eaecb665d36eec5bcacb3fa0b613
   unicode-emoji (4.3.0) sha256=11c02fa73290378c066bb0562cd4c87d8e1b706fbbe0059ca12746a4244de8ce
-  uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
+  uri (1.1.2) sha256=89292e98eabbef6248b0a0ed5e7e398e152f83f17560023a6d94a7f492b169fb
   useragent (0.16.11) sha256=700e6413ad4bb954bb63547fa098dddf7b0ebe75b40cc6f93b8d54255b173844
   web-console (4.3.0) sha256=e13b71301cdfc2093f155b5aa3a622db80b4672d1f2f713119cc7ec7ac6a6da4
   websocket-driver (0.8.2) sha256=97c556b019bf3410b4961002ac501621e9322d3f8a7bc02161a09301cc4c4146
